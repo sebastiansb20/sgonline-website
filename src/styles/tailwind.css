@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MENU - navbar */
+.nav-item {
+    @apply p-4 text-5xl font-sans cursor-pointer hover:text-gray-400;
+  }
+
+/* SKILLS - ul - li */
+.li-item-skills{
+    @apply pt-4 pb-4 text-3xl font-sans cursor-pointer text-gray-400 hover:text-white;
+}
+
+.li-item-skills-det{
+    @apply  pt-1 pb-1 text-2xl font-sans cursor-pointer text-gray-400 hover:text-white;
+}
