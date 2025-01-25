@@ -28,7 +28,7 @@ export const Skills = () => {
   }, [skills]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col">
+    <div className="min-h-screen flex items-center justify-center flex-col border-b-[1px] border-gray-700">
 
       {/* left-s */}
       <div id="left-s" className="top-0 flex max-h-[16rem] w-[80%] justify-between ">
@@ -74,7 +74,7 @@ export const Skills = () => {
         </div>
 
         {/* skill detalles de activa */}
-        <div className="flex flex-col items-start space-y-4 w-[50%]">
+        <div className="flex flex-col items-start space-y-4 w-[50%] ">
           <ul>
             {skillDetails[skillActiva].map((detail, index) => (
               <li key={index} className="li-item-skills-det text-gray-300">
