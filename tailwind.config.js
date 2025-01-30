@@ -16,11 +16,15 @@ module.exports = {
           "50%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(100%)" },
         },
+        fadeInColor: {
+          '0%': { filter: 'grayscale(1)' },
+          '100%': { filter: 'grayscale(0)' },
+        },
       },
       animation: {
         "slide-down": "slideDown 2s infinite linear",
         "slide-right" : "slideRight 1.7s infinite linear",
-        "appear-down": " ease-in-out duration-500 "
+        "fadeInColor" : 'fadeInColor 4s ease-in-out forwards',      
       },
     },
   },

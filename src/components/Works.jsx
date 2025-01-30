@@ -14,7 +14,7 @@ const Works = () => {
             <div id="frase-skill" className="w-[60%] flex items-center justify-center">
                 <p className=" font-light text-[1.2rem] text-gray-300 mt-[2rem]">
                     Más de 150 trabajos realizados que cumplieron con la expectativa
-                    de los clientes, alcanzando el éxito en su rubro.
+                    de los clientes, contribuyendo a el alcance del éxito en su rubro.
                 </p>
             </div>
             <div className="flex items-center justify-center w-[60%]">
