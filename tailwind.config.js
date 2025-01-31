@@ -24,7 +24,7 @@ module.exports = {
       animation: {
         "slide-down": "slideDown 2s infinite linear",
         "slide-right" : "slideRight 1.7s infinite linear",
-        "fadeInColor" : 'fadeInColor 4s ease-in-out forwards',      
+        "fadeInColor" : 'fadeInColor 3s ease-in-out forwards',      
       },
     },
   },

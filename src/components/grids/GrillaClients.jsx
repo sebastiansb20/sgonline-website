@@ -20,15 +20,15 @@ const Grid = () => {
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="w-full h-60 flex items-center justify-center rounded-md overflow-hidden "
-            // style={{
-            //   animationDelay: `${index * 0.3}s`,
-            // }}
+            className="w-full h-60 flex items-center justify-center rounded-md overflow-hidden animate-fadeInColor "
+            style={{
+              animationDelay: `${index * 0.3}s`,
+            }}
           >
             <img
               src={logo}
               alt={`logo-${index}`}
-              className="object-contain w-[90%] h-[90%] transition duration-300 filter grayscale hover:grayscale-0"
+              className="object-contain w-[90%] h-[90%] transition duration-300 filter grayscale hover:grayscale-0 "
             />
           </div>
         ))}
@@ -38,3 +38,5 @@ const Grid = () => {
 };
 
 export default Grid;
+
+//

@@ -1,5 +1,5 @@
 import React from 'react'
-import GrillaClients from './GrillaClients'
+import GrillaClients from '../../grids/GrillaClients'
 
 const Clients = () => {
   return (
