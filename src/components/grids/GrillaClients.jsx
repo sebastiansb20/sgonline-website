@@ -2,16 +2,16 @@ import React from 'react';
 
 const Grid = () => {
   const logos = [
-    "/assets/logos-clientes/logo-ahiva.png",
-    "/assets/logos-clientes/logo-casacalma.png",
-    "/assets/logos-clientes/logo-citef.png",
-    "/assets/logos-clientes/logo-eatfull.png",
-    "/assets/logos-clientes/logo-elrincon.png",
-    "/assets/logos-clientes/logo-fitzone.png",
-    "/assets/logos-clientes/logo-juntadepartamental.png",
-    "/assets/logos-clientes/logo-lauraestilista.png",
-    "/assets/logos-clientes/logo-PaseoTrinidad.png",
-    "/assets/logos-clientes/logo-podologamelina.png",
+    "/assets/images/logos-clientes/logo-ahiva.png",
+    "/assets/images/logos-clientes/logo-casacalma.png",
+    "/assets/images/logos-clientes/logo-citef.png",
+    "/assets/images/logos-clientes/logo-eatfull.png",
+    "/assets/images/logos-clientes/logo-elrincon.png",
+    "/assets/images/logos-clientes/logo-fitzone.png",
+    "/assets/images/logos-clientes/logo-juntadepartamental.png",
+    "/assets/images/logos-clientes/logo-lauraestilista.png",
+    "/assets/images/logos-clientes/logo-PaseoTrinidad.png",
+    "/assets/images/logos-clientes/logo-podologamelina.png",
   ];
 
   return (

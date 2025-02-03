@@ -9,10 +9,10 @@ const Works = () => {
         
         <div id="left-s" className="top-0 flex max-h-[16rem] w-[50%]  flex-col">
             <div id="title-proyectos" className="">
-                <h2 className="font-bold text-[8rem] text-gray-400">Works</h2>
+                <h2 className="font-bold text-[8rem] text-gray-400 font-montserrat">Works</h2>
             </div>
             <div id="frase-skill" className="w-[60%] flex items-center justify-center">
-                <p className=" font-light text-[1.2rem] text-gray-300 mt-[2rem]">
+                <p className=" font-light text-[1.2rem] text-gray-300 mt-[2rem] font-montserrat">
                     Más de 150 trabajos realizados que cumplieron con la expectativa
                     de los clientes, contribuyendo a el alcance del éxito en su rubro.
                 </p>

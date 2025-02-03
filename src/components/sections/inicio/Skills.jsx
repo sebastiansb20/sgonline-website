@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import '../../../styles/inicio.css'
 
 export const Skills = () => {
-  const skills = ['Diseño gráfico', 'Diseño web', 'Estrategias de marketing', 'Edición de video'];
+  const skills = ['Diseño gráfico', 'Diseño web', 'Estrategias de marketing', 'Edición de video','Eventos'];
 
   const skillDetails = {
     'Diseño gráfico': ['Flyers', 'Banners', 'Montajes', 'Publicidad'],
     'Diseño web': ['UI/UX', 'Sitios responsivos', 'Integraciones', 'Landing pages'],
     'Estrategias de marketing': ['SEO', 'Marketing de contenido', 'Redes sociales', 'Campañas pagadas'],
     'Edición de video': ['Animaciones', 'Corrección de color', 'Montaje', 'Postproducción'],
+    'Eventos':['Fiestas','Eventos en vivo','Campañas de marketing','Videos con drone profesional']
   };
 
   const [skillActiva, setSkillActiva] = useState(skills[0]);

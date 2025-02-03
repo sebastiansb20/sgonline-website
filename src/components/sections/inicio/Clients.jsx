@@ -8,11 +8,11 @@ const Clients = () => {
 
         <div id="top" className="flex w-[80%] h-full justify-between items-center ">
             <div id="title-clients" className="flex">
-                <h2 className="font-bold text-[8rem] text-gray-400">Clients</h2>
+                <h2 className="font-bold text-[8rem] text-gray-400 font-montserrat">Clients</h2>
             </div>
             <div id="frase-clients" className="flex items-center justify-center w-[60%] ">
-                <p className=" font-light text-[1.2rem] text-gray-300">
-                Algunas empresas y personas que confiaron en nuestro trabajo
+                <p className=" font-light text-[1.2rem] text-gray-300 font-montserrat">
+                Algunas empresas y personas que confiaron en nuestro trabajo.
 
                 </p>
             </div>

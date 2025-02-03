@@ -2,7 +2,7 @@
  import {AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
  import { MdOutlineCameraAlt } from "react-icons/md";
  import '../../styles/common/menu.css';
-
+ import { Link } from 'react-router-dom';
  const Navbar = () => {
 
     const[nav, setNav] = useState(false);
@@ -17,9 +17,10 @@
     
      <div className=' flex justify-between items-center h-24  text-white max-w-auto mx-auto px-12'>
         <div>
-            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>
+            {/* <h1 className='w-full text-3xl font-bold text-[#00df9a]'>
                 SGONLINE
-            </h1>
+            </h1> */}
+            <img src='/assets/images/logo-sgonline.png' alt='Logo SGonline' className='size-20'/>
         </div>
         
 
@@ -37,15 +38,15 @@
             
             <ul className='uppercase p-4 max-w-[50%] text-center'>
                 <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <li className='nav-item'>Inicio</li> 
+                    <Link to='/'><li className='nav-item'>Inicio</li> </Link>
                     {/* <MdOutlineCameraAlt size={25}/> */}
                 </div>
                 <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <li className='nav-item'>Proyectos</li>
+                    <Link to='/portfolio'><li className='nav-item'>Proyectos</li></Link>
                     {/* <MdOutlineCameraAlt size={25}/> */}
                 </div>
                 <div className="flex items-center justify-between p cursor-pointer">
-                    <li className='nav-item'>Nosotros</li>
+                    <Link to='/nosotros'><li className='nav-item'>Nosotros</li></Link>
                     {/* <MdOutlineCameraAlt size={25}/> */}
                 </div>
                 <div className="flex items-center justify-between p-2 cursor-pointer">

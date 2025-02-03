@@ -40,7 +40,7 @@ export const ContactForm = () => {
                     value={FormData.nameClient}
                     onChange={handleChange}
                     placeholder='Nombre completo *'
-                    className='form-input'
+                    className='form-input font-montserrat'
                     required
                     />
             </div>
@@ -55,7 +55,7 @@ export const ContactForm = () => {
                     value={FormData.company}
                     onChange={handleChange}
                     placeholder='Marca, empresa o idea!'
-                    className='form-input '
+                    className='form-input font-montserrat'
                     />
             </div>
             <div className='mb-4 border-b-[2px] border-gray-700 hover:border-r-[2px]  hover:border-gray-700'>
@@ -69,7 +69,7 @@ export const ContactForm = () => {
                     value={FormData.telNumber}
                     onChange={handleChange}
                     placeholder='Número de teléfono'
-                    className='form-input '
+                    className='form-input font-montserrat'
                     />
             </div>
             <div className='mb-4 border-b-[2px] border-gray-700 hover:border-r-[2px]  hover:border-gray-700'>
@@ -83,7 +83,7 @@ export const ContactForm = () => {
                     value={FormData.email}
                     onChange={handleChange}
                     placeholder='Email *'
-                    className='form-input '
+                    className='form-input font-montserrat'
                     required
                     />
             </div>
@@ -97,7 +97,7 @@ export const ContactForm = () => {
                     value={formData.description}
                     onChange={handleChange}
                     placeholder="Describe brevemente lo que necesitas *"
-                    className="form-input w-[100%]"
+                    className="form-input w-[100%] font-montserrat"
                     rows="4"
                     required
                 ></textarea>
@@ -109,7 +109,7 @@ export const ContactForm = () => {
                 className="`
                     w-[30%] bg-gray-300 hover:bg-gray-700 text-gray-600 font-bold py-2 px-4 rounded-lg 
                     border border-gray-700 transition duration-300
-                    hover:text-gray-300
+                    hover:text-gray-300 font-montserrat
                     "
                 >
                     Enviar

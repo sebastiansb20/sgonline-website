@@ -4,5 +4,5 @@
 
 
 .p-nav{
-    @apply text-gray-800 hover:border-b-[1px] hover:bg-gray-800 hover:text-gray-300 hover:rounded-lg p-2 cursor-pointer
+    @apply text-gray-800 hover:border-b-[1px] hover:bg-gray-800 hover:text-gray-300 hover:rounded-lg p-2 cursor-pointer font-montserrat
 }
