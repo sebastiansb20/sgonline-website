@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input{
+    @apply w-[80%] px-3 py-2  text-gray-700 
+        bg-gray-300 focus:outline-none 
+        placeholder:text-gray-400
+}

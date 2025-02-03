@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { HiOutlineArrowRight } from "react-icons/hi2";
+import '../../styles/common/formContact.css'
 
 export const ContactForm = () => {
 

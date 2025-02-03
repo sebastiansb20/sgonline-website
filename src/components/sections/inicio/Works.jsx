@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiOutlineArrowRight } from "react-icons/hi2";
-
+import {Link} from 'react-router-dom'
 const Works = () => {
 
     
@@ -21,12 +21,15 @@ const Works = () => {
                 <div className="`inline-flex items-center justify-center mt-[1rem]
                       h-16 w-16  cursor-pointer border rounded-full p-2 border-white
                       overflow-hidden">
-                      <div className="animate-slide-right">
-                        <HiOutlineArrowRight 
-                          size={40}
-                          className="text-white opacity-60"
-                        />
-                      </div>
+                        <Link to='/portfolio'>
+                          <div className="animate-slide-right">
+                            <HiOutlineArrowRight 
+                              size={40}
+                              className="text-white opacity-60"
+                            />
+                          </div>
+                        </Link>
+                      
                 </div>
             </div>
         </div>

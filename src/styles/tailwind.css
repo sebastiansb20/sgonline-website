@@ -1,31 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource/montserrat';
 
-/* MENU - navbar */
-.nav-item {
-    @apply p-4 text-5xl font-sans cursor-pointer hover:text-gray-400;
-  }
-
-/* SKILLS - ul - li */
-.li-item-skills{
-    @apply pt-4 pb-4 text-3xl font-sans cursor-pointer text-gray-400 hover:text-white;
-}
-
-.li-item-skills-det{
-    @apply  pt-1 pb-1 text-2xl font-sans cursor-pointer text-gray-400 hover:text-white;
-}
-
-/* FORM CONTACTO */
-
-.form-input{
-    @apply w-[80%] px-3 py-2  text-gray-700 
-        bg-gray-300 focus:outline-none 
-        placeholder:text-gray-400
-}
-
-/* FOOTER */
-
-.h2-menu-footer{
-    @apply  text-gray-400 hover:text-white text-xl cursor-pointer p-4
+body{
+    @apply font-montserrat;
 }

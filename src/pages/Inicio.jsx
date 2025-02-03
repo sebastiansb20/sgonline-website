@@ -11,10 +11,6 @@ import {Footer}  from '../components/common/Footer';
 const Inicio = () => {
     return (
         <div className=''>
-          
-          <div className='top-0'>
-            <Navbar />
-          </div>
           <div className='hero'>
             <Hero className=''/>  
           </div>

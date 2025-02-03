@@ -1,8 +1,7 @@
  import React, {useState} from 'react'
  import {AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
  import { MdOutlineCameraAlt } from "react-icons/md";
- import '../../styles/tailwind.css';
-
+ import '../../styles/common/menu.css';
 
  const Navbar = () => {
 

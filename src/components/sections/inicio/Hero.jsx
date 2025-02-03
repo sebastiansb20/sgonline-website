@@ -17,9 +17,9 @@ const Hero = () => {
       
       <div className="flex flex-col items-center justify-center h-screen mt-[-96px]">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="w-full font-bold text-8xl text-white py-5">SGonline</h1>
-          <h3 className="w-full font-light text-3xl text-white opacity-60">
-            IMPULSAMOS TU MARCA
+          <h1 className="w-full font-bold text-8xl text-white py-5 font-montserrat">SGonline</h1>
+          <h3 className="w-full font-montserrat text-3xl text-white opacity-60">
+            SOCIAL MEDIA AGENCY
           </h3>
         </div>
 
@@ -41,7 +41,7 @@ const Hero = () => {
       <div
         className="h-screen flex items-center justify-center bg-gray-800"
       >
-        <h2 className="text-5xl font-bold text-white">Bienvenido a la siguiente sección</h2>
+        <h2 className="text-5xl font-bold text-white">Aca va el video</h2>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../../../styles/inicio.css'
 
 export const Skills = () => {
   const skills = ['Diseño gráfico', 'Diseño web', 'Estrategias de marketing', 'Edición de video'];
@@ -33,10 +34,10 @@ export const Skills = () => {
       {/* left-s */}
       <div id="left-s" className="top-0 flex max-h-[16rem] w-[80%] justify-between ">
         <div id="titleskill" className="">
-          <h2 className="font-bold text-[8rem] text-gray-400">Skills</h2>
+          <h2 className="font-bold text-[8rem] text-gray-400 font-montserrat">Skills</h2>
         </div>
         <div id="frase-skill" className="w-[60%] flex items-center justify-center">
-          <p className=" font-light text-[1.2rem] text-gray-300">
+          <p className=" font-light font-montserrat text-[1.2rem] text-gray-300">
             Ofrecemos un enfoque único y completo para impulsar todas <br />
             las capacidades que tu marca necesita para destacarse
           </p>
@@ -50,7 +51,7 @@ export const Skills = () => {
             {skills.map((skill, index) => (
               <li
                 key={skill}
-                className={`li-item-skills cursor-pointer hover:text-white relative ${
+                className={`li-item-skills cursor-pointer  hover:text-white relative ${
                   index === activeIndex ? 'text-white' : 'text-gray-300'
                 }`}
                 onMouseEnter={() => {

@@ -26,6 +26,9 @@ module.exports = {
         "slide-right" : "slideRight 1.7s infinite linear",
         "fadeInColor" : 'fadeInColor 3s ease-in-out forwards',      
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

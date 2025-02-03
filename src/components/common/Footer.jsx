@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import '../../styles/common/footer.css';
+
 
 export const Footer = () => {
   return (
@@ -16,8 +18,8 @@ export const Footer = () => {
             <h3 className='h2-menu-footer'>planner@sgonline.com.uy</h3>
             <h3 className='h2-menu-footer'>+598 92 433 537</h3>
             <div className='flex flex-row ml-4 gap-3'>
-                <img src='/assets/logo-instagram.webp' className='size-12 grayscale hover:grayscale-0'/>
-                <img src='/assets/logo-whatsapp.webp' className='size-12 grayscale hover:grayscale-0'/>
+                <img src='/assets/images/logo-instagram.webp' className='size-12 grayscale hover:grayscale-0'/>
+                <img src='/assets/images/logo-whatsapp.webp' className='size-12 grayscale hover:grayscale-0'/>
         </div>
         </div>
         <div className='flex flex-row m-20 gap-3'>

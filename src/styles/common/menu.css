@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.nav-item {
+    @apply p-4 text-5xl font-sans cursor-pointer hover:text-gray-400;
+  }
