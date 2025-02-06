@@ -7,16 +7,16 @@ export const Portfolio = () => {
   return (
     <div className="div">
       <div className=' flex items-center justify-center flex-col '>
-        <h2 className='font-bold text-[5rem] text-gray-400 font-montserrat'>Portfolio</h2>
+        <h2 className='font-bold text-[5rem] text-gray-400 font-montserrat mb-10'>Portfolio</h2>
 
         <div className='flex items-center justify-center flex-col w-full'>
           <div className='flex items-center justify-center bg-gray-300 w-full h-20 gap-5'>
               <p className='p-nav'>DISEÑO GRÁFICO</p>
               <p className='p-nav'>FOTOGRAFÍA</p>
-              <p className='p-nav'>MARKETING DIGITAL</p>
+              <p className='p-nav  font-bold italic '>MARKETING DIGITAL</p>
               <p className='p-nav'>COBERTURAS</p>
               <p className='p-nav'>AUDIOVISUAL</p>
-              <p className='p-nav'>VIDEO DRONE</p>
+              <p className='p-nav'>COBERTURA AÉREA</p>
           </div>
         </div>
       </div>
