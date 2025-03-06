@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* h2 titles */
+
+.h2-titles{
+    @apply font-bold text-gray-400 font-montserrat text-[6rem] md:text-[6rem] lg:text-[8rem]
+}
 
 /* SKILLS - ul - li */
 .li-item-skills{
-    @apply pt-4 pb-4 text-3xl font-sans cursor-pointer text-gray-400 hover:text-white font-montserrat;
+    @apply pt-2 pb-2 md:pt-4 md:pb-4 text-xl md:text-3xl font-sans cursor-pointer text-gray-400 hover:text-white font-montserrat;
 }
 
 .li-item-skills-det{
-    @apply  pt-1 pb-1 text-2xl font-sans cursor-pointer text-gray-400 hover:text-white font-montserrat;
+    @apply  md:pt-1 md:pb-1 text-[1rem] md:text-2xl font-sans cursor-pointer text-gray-400 hover:text-white font-montserrat;
 }
 

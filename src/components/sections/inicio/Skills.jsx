@@ -30,15 +30,15 @@ export const Skills = () => {
   }, [skills]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col border-b-[1px] border-gray-700">
+    <div className="min-h-screen flex items-center  md:justify-center flex-col border-b-[1px] border-gray-700">
 
       {/* left-s */}
-      <div id="left-s" className="top-0 flex max-h-[16rem] w-[80%] justify-between ">
+      <div id="left-s" className="top-0 my-[2rem] md:my-0 md:max-h-[16rem] w-[95%] md:w-[80%] justify-between flex flex-col md:flex-row ">
         <div id="titleskill" className="">
-          <h2 className="font-bold text-[8rem] text-gray-400 font-montserrat">Skills</h2>
+          <h2 className="h2-titles">Skills</h2>
         </div>
-        <div id="frase-skill" className="w-[60%] flex items-center justify-center">
-          <p className=" font-light font-montserrat text-[1.2rem] text-gray-300">
+        <div id="frase-skill" className="w-[100%] flex items-center justify-center md:w-[60%]">
+          <p className="font-light font-montserrat text-[1rem] md:text-[1.2rem] text-gray-300">
             Ofrecemos un enfoque único y completo para impulsar todas <br />
             las capacidades que tu marca necesita para destacarse
           </p>
@@ -46,7 +46,7 @@ export const Skills = () => {
       </div>
 
       {/* right-s */}
-      <div id="right-s" className="top-0 flex max-h-[16rem] w-[80%] justify-between">
+      <div id="right-s" className="top-0 flex justify-between mt-[2rem] md:mt[0] md:max-h-[16rem] w-[95%] md:w-[80%] ">
         <div id="skills-list" className="">
           <ul>
             {skills.map((skill, index) => (

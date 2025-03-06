@@ -7,7 +7,7 @@ const ContactUs = () => {
         
     {/* Sección Izquierda */}
     <div id="left-s" className="flex flex-col w-full md:w-[40%] text-center md:text-left mt-10 md:mt-0">
-        <h2 className="font-bold text-[4rem] md:text-[5rem] text-gray-700 leading-none font-montserrat">
+        <h2 className="font-bold text-[3rem] md:text-[5rem] text-gray-700 leading-none font-montserrat">
             TRABAJEMOS <br/>JUNTOS
         </h2>
         <p className="text-[1.2rem] text-gray-800 mt-5 font-montserrat">

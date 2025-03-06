@@ -28,7 +28,7 @@ const Grid = () => {
             <img
               src={logo}
               alt={`logo-${index}`}
-              className="object-contain w-[90%] h-[90%] transition duration-300 filter grayscale hover:grayscale-0 "
+              className="object-contain w-[90%] h-[90%] transition duration-300 filter md:grayscale md:hover:grayscale-0 "
             />
           </div>
         ))}
