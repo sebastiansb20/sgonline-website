@@ -1,6 +1,8 @@
 import React from 'react'
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import {Link} from 'react-router-dom'
+import Counter from '../../common/Counter';
+
 const Works = () => {
 
     
@@ -9,10 +11,10 @@ const Works = () => {
         
         <div id="left-s" className="top-0 flex flex-col md:max-h-[16rem] w-[95%] md:w-[50%] ">
             <div id="title-proyectos" className="">
-                <h2 className="h2-titles">Works</h2>
+                <h2 data-aos="fade-up" data-aos-duration="700" className="h2-titles">Works</h2>
             </div>
            
-            <div id="frase-skill" className=" md:w-[60%] flex items-center justify-center">
+            <div  data-aos="fade-up" data-aos-duration="700" id="frase-skill" className=" md:w-[60%] flex items-center justify-center">
                 <p className=" font-light text-[1rem] md:text-[1.2rem] text-gray-300 mt-[2rem] font-montserrat">
                     Más de 150 trabajos realizados que cumplieron con la expectativa
                     de los clientes, contribuyendo a el alcance del éxito en su rubro.
@@ -37,8 +39,9 @@ const Works = () => {
             
             
         <div id='right-s' className='top-0 flex md:w-[50%] items-start'>
-            <div>
-                <p className='text-gray-300 font-bold text-[8rem] md:text-[14rem] '>+150</p>
+            <div data-aos="fade-up" data-aos-duration="700">
+                {/* <p  className='text-gray-300 font-bold text-[8rem] md:text-[14rem] '>+150</p> */}
+                <Counter />
             </div>
         </div>
 

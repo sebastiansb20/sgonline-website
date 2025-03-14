@@ -27,7 +27,7 @@
         <div onClick={handleNav} className='z-50'>
             {nav ? 
             <div className="">
-                <AiOutlineClose size={50} className=' z-50 opacity-70 fixed'/>
+                <AiOutlineClose size={50} className=' opacity-70'/>
             </div>
              : <AiOutlineMenu  className='opacity-70' size={50}/> }
             
@@ -36,21 +36,21 @@
         {/* menu */}
         <div  id='menus' className={nav ? ' fixed left-0 z-40 top-0 w-full h-full bg-black  ease-in-out duration-500 flex items-center justify-center' : 'fixed left-[-100%]'}>
             
-            <ul className='uppercase p-4 max-w-[50%] text-center'>
+            <ul className='  text-center'>
                 <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <Link to='/'><li className='nav-item'>Inicio</li> </Link>
+                    <Link to='/'><li className='nav-item font-montserrat'>Inicio</li> </Link>
                     {/* <MdOutlineCameraAlt size={25}/> */}
                 </div>
                 <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <Link to='/portfolio'><li className='nav-item'>Proyectos</li></Link>
-                    {/* <MdOutlineCameraAlt size={25}/> */}
-                </div>
-                <div className="flex items-center justify-between p cursor-pointer">
-                    <Link to='/nosotros'><li className='nav-item'>Nosotros</li></Link>
+                    <Link to='/portfolio'><li className='nav-item font-montserrat'>Proyectos</li></Link>
                     {/* <MdOutlineCameraAlt size={25}/> */}
                 </div>
                 <div className="flex items-center justify-between p-2 cursor-pointer">
-                <li className='nav-item'>Contacto</li>
+                    <Link to='/nosotros'><li className='nav-item font-montserrat'>Nosotros</li></Link>
+                    {/* <MdOutlineCameraAlt size={25}/> */}
+                </div>
+                <div className="flex items-center justify-between p-2 cursor-pointer">
+                <li className='nav-item font-montserrat'>Contacto</li>
                     {/* <MdOutlineCameraAlt size={25}/> */}
                 </div>
             </ul>

@@ -35,10 +35,10 @@ export const Skills = () => {
       {/* left-s */}
       <div id="left-s" className="top-0 my-[2rem] md:my-0 md:max-h-[16rem] w-[95%] md:w-[80%] justify-between flex flex-col md:flex-row ">
         <div id="titleskill" className="">
-          <h2 className="h2-titles">Skills</h2>
+          <h2 data-aos="fade-up" data-aos-duration="700" className="h2-titles">Skills</h2>
         </div>
         <div id="frase-skill" className="w-[100%] flex items-center justify-center md:w-[60%]">
-          <p className="font-light font-montserrat text-[1rem] md:text-[1.2rem] text-gray-300">
+          <p  data-aos="fade-up" data-aos-duration="700" className="font-light font-montserrat text-[1rem] md:text-[1.2rem] text-gray-300">
             Ofrecemos un enfoque único y completo para impulsar todas <br />
             las capacidades que tu marca necesita para destacarse
           </p>

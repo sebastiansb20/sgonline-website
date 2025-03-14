@@ -8,9 +8,9 @@ const Clients = () => {
 
         <div id="top" className="flex flex-col md:flex-row md:w-[80%] h-full justify-between items-center ">
             <div id="title-clients" className="flex">
-                <h2 className="h2-titles">Clients</h2>
+                <h2  data-aos="fade-up" data-aos-duration="700" className="h2-titles">Clients</h2>
             </div>
-            <div id="frase-clients" className="flex items-center justify-center md:w-[60%] p-4">
+            <div  data-aos="fade-up" data-aos-duration="700" id="frase-clients" className="flex items-center justify-center md:w-[60%] p-4">
                 <p className=" font-light text-[1rem] md:text-[1.2rem] text-gray-300 font-montserrat">
                 Algunas empresas y personas que confiaron en nuestro trabajo.
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <div className='w-full flex flex-col md:flex-row #000300 justify-between'>
+    <div className='w-full flex flex-col md:flex-row #000300 justify-between border-t-2 border-gray-500'>
         <div className='flex flex-col m-8 md:m-20'>
             <h2 className='font-bold text-white text-xl md:text-2xl font-montserrat'>Navegación</h2>
             <Link to='/'><h3 className='h2-menu-footer'>Inicio</h3></Link>

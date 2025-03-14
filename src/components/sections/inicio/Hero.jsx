@@ -24,31 +24,9 @@ const Hero = () => {
             Tu navegador no soporta el video.
           </video>
       </div>
-      {/* <div className="flex flex-col items-center justify-center h-screen mt-[-96px]">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="w-full font-bold text-5xl md:text-8xl text-white py-5 font-montserrat">SGonline</h1>
-          <h3 className="w-full font-montserrat text-3xl text-white opacity-60">
-            SOCIAL MEDIA AGENCY
-          </h3>
-          
 
-        </div>
 
-        
-        <div
-          className="relative flex flex-col items-center justify-center mt-[150px] h-16 overflow-hidden cursor-pointer border rounded-full p-2 box-border border-white"
-          onClick={handleScroll}
-        >
-          <div className="animate-slide-down">
-            <HiOutlineArrowDown
-              size={40}
-              className="text-white opacity-60"
-            />
-          </div>
-        </div>
-      </div> */}
-
-      
+    
     </div>
   );
 };

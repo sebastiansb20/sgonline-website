@@ -5,8 +5,17 @@ import Navbar from './components/common/Navbar.jsx';
 import { Portfolio } from './pages/Portfolio.jsx';
 import { Footer } from './components/common/Footer.jsx';
 import Nosotros  from './pages/Nosotros.jsx'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function App() {
+
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+
   return (
     <Router>
       <Navbar />

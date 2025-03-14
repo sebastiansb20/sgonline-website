@@ -32,7 +32,7 @@ const Nosotros = () => {
         
         
         
-    <div className='footer'>
+    <div className='footer mt-[10rem]'>
       <Footer />
     </div>
     </div>

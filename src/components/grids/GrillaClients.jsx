@@ -12,6 +12,9 @@ const Grid = () => {
     "/assets/images/logos-clientes/logo-lauraestilista.png",
     "/assets/images/logos-clientes/logo-PaseoTrinidad.png",
     "/assets/images/logos-clientes/logo-podologamelina.png",
+    "/assets/images/logos-clientes/logo-5050-armando-castaingdebat.png",
+    "/assets/images/logos-clientes/logo-impacto.png",
+    "/assets/images/logos-clientes/logo-kas.png",
   ];
 
   return (
@@ -28,7 +31,7 @@ const Grid = () => {
             <img
               src={logo}
               alt={`logo-${index}`}
-              className="object-contain w-[90%] h-[90%] transition duration-300 filter md:grayscale md:hover:grayscale-0 "
+              className="object-contain w-[90%] h-[90%]  filter transition-transform duration-500 hover:scale-110 "
             />
           </div>
         ))}
