@@ -13,15 +13,11 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between h-24 text-white max-w-auto mx-auto px-2 md:px-12">
       
-      {/* Contenedor para Mobile: Menú - Logo - Botón */}
       <div className="flex items-center w-auto md:w-auto justify-between">
         
-        {/* Menú a la izquierda */}
         <div className="" onClick={handleNav}>
           <AiOutlineMenu size={30} className="opacity-70" />
         </div>
-
-        {/* Logo al centro en mobile, a la izquierda en desktop */}
         
       </div>
 
@@ -35,38 +31,33 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Botón de Contacto a la derecha en mobile */}
         <div className="md:hidden">
           <a
             href="#contactUs"
-            className="border-[1px] rounded-lg p-2 text-[.75rem] border-gray-300 hover:bg-white hover:text-black"
+            className="border-[1px] rounded-lg p-2 text-[.75rem] border-gray-300 hover:bg-white hover:text-black font-montserrat"
           >
-            Contáctanos
+            CONTÁCTANOS
           </a>
         </div>
 
-      {/* Menú en desktop */}
       <div className="hidden md:block">
         <a
           href="#contactUs"
-          className="border-[1px] rounded-lg p-2 border-gray-300 hover:bg-white hover:text-black"
+          className="border-[1px] rounded-lg p-2 border-gray-300 hover:bg-white hover:text-black font-montserrat"
         >
-          Contáctanos
+          CONTÁCTANOS
         </a>
       </div>
 
-      {/* Overlay y Menú en mobile */}
       <div
         className={`fixed left-0 top-0 w-full h-full bg-black transition-transform duration-500 ${
           nav ? "translate-x-0 z-40" : "-translate-x-full"
         }`}
       >
-        {/* Ícono de cierre arriba a la derecha con mayor z-index */}
         <div className="absolute top-5 right-5 z-50 cursor-pointer" onClick={handleNav}>
           <AiOutlineClose size={40} className="opacity-70" />
         </div>
 
-        {/* Contenido del Menú */}
         <ul className="flex flex-col items-center justify-center h-full text-center space-y-6">
           <li className="nav-item font-montserrat" onClick={handleNav}>
             <Link to="/">Inicio</Link>

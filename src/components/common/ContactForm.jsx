@@ -5,9 +5,6 @@ import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
 
-    const serviceID = 'service_fszq9hd'; // Reemplaza con tu Service ID
-    const templateID = 'template_6gbf96l'; // Reemplaza con tu Template ID
-    const userID = 'mLtVN-AVLXJnxB9o_'; // Reemplaza con tu User ID
 
     const [formData,setFormData] = useState({
         nameC:'',
@@ -25,15 +22,15 @@ export const ContactForm = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-
+        console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID,process.env.REACT_APP_EMAILJS_USER_ID)
     
-        emailjs.send(serviceID, templateID, {
+        emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, {
             nameClient: formData.nameC,
             company: formData.company || 'Empresa no especificada',
             telephone: formData.telNumber || 'Teléfono no especificado',
             email: formData.email,
             message: formData.message
-        }, userID)
+        }, process.env.REACT_APP_EMAILJS_USER_ID)
         .then((response) => {
             console.log('Correo enviado con éxito!', response.status, response.text);
             alert('Tu mensaje ha sido enviado correctamente');

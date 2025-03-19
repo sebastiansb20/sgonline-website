@@ -10,12 +10,12 @@ export const portfolioImages = {
     ],
     ahiva: [
       "/assets/images/portfolio/ahiva/ahiva1.png",
-      "/assets/images/portfolio/ahiva/ahiva2.png",
-      "/assets/images/portfolio/ahiva/ahiva4.png",
+      "/assets/images/portfolio/ahiva/ahiva6.png",
+      "/assets/images/portfolio/ahiva/ahiva5.png",
       "/assets/images/portfolio/ahiva/ahiva3.png",
       
-      "/assets/images/portfolio/ahiva/ahiva5.png",
-      "/assets/images/portfolio/ahiva/ahiva6.png",
+      "/assets/images/portfolio/ahiva/ahiva2.png",
+      "/assets/images/portfolio/ahiva/ahiva4.png",
     ],
     eatfull:[
       "/assets/images/portfolio/eatfull/eatfull1.jpg",

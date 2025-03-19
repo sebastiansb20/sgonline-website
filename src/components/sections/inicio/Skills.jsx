@@ -6,10 +6,10 @@ export const Skills = () => {
 
   const skillDetails = {
     'Diseño gráfico': ['Flyers', 'Banners', 'Montajes', 'Publicidad'],
-    'Diseño web': ['UI/UX', 'Sitios responsivos', 'Integraciones', 'Landing pages'],
+    'Diseño web': ['UI/UX', 'Sitios responsivos', 'Aplicaciónes mobile', 'Landing pages'],
     'Estrategias de marketing': ['SEO', 'Marketing de contenido', 'Redes sociales', 'Campañas pagadas'],
     'Edición de video': ['Animaciones', 'Corrección de color', 'Montaje', 'Postproducción'],
-    'Eventos':['Fiestas','Eventos en vivo','Campañas de marketing','Videos con drone profesional']
+    'Eventos':['Fiestas','Eventos en vivo','Videos drone profesional']
   };
 
   const [skillActiva, setSkillActiva] = useState(skills[0]);
