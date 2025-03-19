@@ -1,15 +1,20 @@
 import React,{useState} from 'react'
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import '../../styles/common/formContact.css'
+import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
 
+    const serviceID = 'service_fszq9hd'; // Reemplaza con tu Service ID
+    const templateID = 'template_6gbf96l'; // Reemplaza con tu Template ID
+    const userID = 'mLtVN-AVLXJnxB9o_'; // Reemplaza con tu User ID
+
     const [formData,setFormData] = useState({
-        nameClient:'',
+        nameC:'',
         company:'',
         telNumber:'',
         email:'',
-        description:''
+        message:''
     })
 
     const handleChange = (e) =>{
@@ -19,21 +24,31 @@ export const ContactForm = () => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        const { nameClient, company, telNumber, email, description } = formData;
-        const destinatario = "support@sgonline.uy";
-        const subject = `Nuevo mensaje en SGonline.uy de contacto de ${nameClient}`;
-        const body = `
-        Nombre: ${nameClient}
-        Empresa: ${company || "Empresa no especificada"}
-        Teléfono: ${telNumber || "Teléfono no especificado"}
-        Email: ${email}
-        Descripción:
-        ${description}
-        `;
+
+
     
-        const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-        window.location.href = mailtoLink;
+        emailjs.send(serviceID, templateID, {
+            nameClient: formData.nameC,
+            company: formData.company || 'Empresa no especificada',
+            telephone: formData.telNumber || 'Teléfono no especificado',
+            email: formData.email,
+            message: formData.message
+        }, userID)
+        .then((response) => {
+            console.log('Correo enviado con éxito!', response.status, response.text);
+            alert('Tu mensaje ha sido enviado correctamente');
+            setFormData({
+                nameClient: '',
+                company: '',
+                telNumber: '',
+                email: '',
+                description: ''
+            });
+        })
+        .catch((error) => {
+            console.log('Error al enviar el correo:', error);
+            alert('Hubo un error al enviar el mensaje, intenta nuevamente.');
+        });
     }
 
   return (
@@ -50,8 +65,8 @@ export const ContactForm = () => {
                 <input
                     type='text'
                     id='name'
-                    name='name'
-                    value={FormData.nameClient}
+                    name='nameC'
+                    value={FormData.nameC}
                     onChange={handleChange}
                     placeholder='Nombre completo *'
                     className='form-input font-montserrat'
@@ -106,9 +121,9 @@ export const ContactForm = () => {
                     Descripción Breve
                 </label> */}
                 <textarea
-                    id="description"
-                    name="description"
-                    value={formData.description}
+                    id="message"
+                    name="message"
+                    value={formData.message}
                     onChange={handleChange}
                     placeholder="Describe brevemente lo que necesitas *"
                     className="form-input w-[100%] font-montserrat"

@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 .h2-menu-footer{
-    @apply  text-gray-400 hover:text-white text-[.9rem] md:text-[1rem]  cursor-pointer p-2 hover:border-b-[2px]  hover:border-gray-700 font-montserrat
+    @apply  text-gray-400 hover:text-white text-[.9rem] md:text-[1rem]  
+    cursor-pointer py-2 border-b-2 border-transparent hover:border-gray-700 font-montserrat
+    inline-block
 }

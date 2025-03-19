@@ -11,19 +11,19 @@ import {Footer}  from '../components/common/Footer';
 const Inicio = () => {
     return (
         <div className=''>
-          <div className='hero'>
+          <div id='hero' className='hero'>
             <Hero className=''/>  
           </div>
-          <div className='skills'>
+          <div id='skills' className='skills'>
             <Skills />
           </div>
-          <div className='proyectos'>
+          <div id='works' className='proyectos'>
             <Works />
           </div>
-          <div className='clients'>
+          <div id='clients' className='clients'>
             <Clients />
           </div>
-          <div className='contactUs bg-gray-300'>
+          <div id='contactUs' className='contactUs bg-gray-300'>
             <ContactUs />
           </div>
           <div className='footer'>

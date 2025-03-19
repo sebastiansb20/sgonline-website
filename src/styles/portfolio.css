@@ -4,12 +4,12 @@
 
 
 .p-nav{
-    @apply text-gray-800 hover:border-b-[1px] hover:bg-gray-800 hover:text-gray-300 hover:rounded-lg p-2 cursor-pointer
+    @apply text-gray-800  p-2 
      font-montserrat
 }
 
 .h3-empresa{
-    @apply font-bold text-[1.2rem] md:text-[2rem] text-gray-800 border-b-2 border-gray-800 w-auto py-3 m-4 md:m-10 font-montserrat
+    @apply font-black text-[1.2rem] md:text-[2rem] text-gray-800 border-b-2 border-gray-800 w-auto py-3 m-4 md:m-10 font-montserrat
 }
 
 .p-servicio-empresa{

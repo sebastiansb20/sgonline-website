@@ -1,117 +1,86 @@
- import React, {useState} from 'react'
- import {AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
- import { MdOutlineCameraAlt } from "react-icons/md";
- import '../../styles/common/menu.css';
- import { Link } from 'react-router-dom';
- const Navbar = () => {
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import "../../styles/common/menu.css";
 
-    const[nav, setNav] = useState(false);
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
 
-    const handleNav = () =>{
-        setNav(!nav);
-    }
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-
-
-   return (
-    
-     <div className=' flex justify-between items-center h-24  text-white max-w-auto mx-auto px-12'>
-        <div>
-            {/* <h1 className='w-full text-3xl font-bold text-[#00df9a]'>
-                SGONLINE
-            </h1> */}
-            <img src='/assets/images/logo-sgonline.png' alt='Logo SGonline' className='size-20'/>
-        </div>
+  return (
+    <div className="flex items-center justify-between h-24 text-white max-w-auto mx-auto px-2 md:px-12">
+      
+      {/* Contenedor para Mobile: Menú - Logo - Botón */}
+      <div className="flex items-center w-auto md:w-auto justify-between">
         
-
-        <div onClick={handleNav} className='z-50'>
-            {nav ? 
-            <div className="">
-                <AiOutlineClose size={50} className=' opacity-70'/>
-            </div>
-             : <AiOutlineMenu  className='opacity-70' size={50}/> }
-            
+        {/* Menú a la izquierda */}
+        <div className="" onClick={handleNav}>
+          <AiOutlineMenu size={30} className="opacity-70" />
         </div>
 
-        {/* menu */}
-        <div  id='menus' className={nav ? ' fixed left-0 z-40 top-0 w-full h-full bg-black  ease-in-out duration-500 flex items-center justify-center' : 'fixed left-[-100%]'}>
-            
-            <ul className='  text-center'>
-                <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <Link to='/'><li className='nav-item font-montserrat'>Inicio</li> </Link>
-                    {/* <MdOutlineCameraAlt size={25}/> */}
-                </div>
-                <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <Link to='/portfolio'><li className='nav-item font-montserrat'>Proyectos</li></Link>
-                    {/* <MdOutlineCameraAlt size={25}/> */}
-                </div>
-                <div className="flex items-center justify-between p-2 cursor-pointer">
-                    <Link to='/nosotros'><li className='nav-item font-montserrat'>Nosotros</li></Link>
-                    {/* <MdOutlineCameraAlt size={25}/> */}
-                </div>
-                <div className="flex items-center justify-between p-2 cursor-pointer">
-                <li className='nav-item font-montserrat'>Contacto</li>
-                    {/* <MdOutlineCameraAlt size={25}/> */}
-                </div>
-            </ul>
+        {/* Logo al centro en mobile, a la izquierda en desktop */}
+        
+      </div>
+
+      <div className="flex-grow flex justify-center ml-8">
+          <Link to="/">
+            <img
+              src="/assets/images/logo-sgonline.png"
+              alt="Logo SGonline"
+              className="size-20 md:size-30"
+            />
+          </Link>
         </div>
-     </div>
-   )
- }
- 
- export default Navbar
 
-//  import React, { useState } from "react";
-// import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+        {/* Botón de Contacto a la derecha en mobile */}
+        <div className="md:hidden">
+          <a
+            href="#contactUs"
+            className="border-[1px] rounded-lg p-2 text-[.75rem] border-gray-300 hover:bg-white hover:text-black"
+          >
+            Contáctanos
+          </a>
+        </div>
 
-// const Navbar = () => {
-//   const [nav, setNav] = useState(false);
+      {/* Menú en desktop */}
+      <div className="hidden md:block">
+        <a
+          href="#contactUs"
+          className="border-[1px] rounded-lg p-2 border-gray-300 hover:bg-white hover:text-black"
+        >
+          Contáctanos
+        </a>
+      </div>
 
-//   const handleNav = () => {
-//     setNav(!nav);
-//   };
+      {/* Overlay y Menú en mobile */}
+      <div
+        className={`fixed left-0 top-0 w-full h-full bg-black transition-transform duration-500 ${
+          nav ? "translate-x-0 z-40" : "-translate-x-full"
+        }`}
+      >
+        {/* Ícono de cierre arriba a la derecha con mayor z-index */}
+        <div className="absolute top-5 right-5 z-50 cursor-pointer" onClick={handleNav}>
+          <AiOutlineClose size={40} className="opacity-70" />
+        </div>
 
-//   return (
-//     <div className="flex justify-between items-center h-24 text-white max-w-auto mx-auto px-12">
-//       {/* Logo */}
-//       <div>
-//         <h1 className="w-full text-3xl font-bold text-[#00df9a]">SGONLINE</h1>
-//       </div>
+        {/* Contenido del Menú */}
+        <ul className="flex flex-col items-center justify-center h-full text-center space-y-6">
+          <li className="nav-item font-montserrat" onClick={handleNav}>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li className="nav-item font-montserrat" onClick={handleNav}>
+            <Link to="/portfolio">Proyectos</Link>
+          </li>
+          <li className="nav-item font-montserrat" onClick={handleNav}>
+            <Link to="/nosotros">Nosotros</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-//       {/* Botón de menú */}
-//       <div onClick={handleNav} className="cursor-pointer z-50">
-//         {nav ? (
-//           <AiOutlineClose size={50} className="mr-4 opacity-70" />
-//         ) : (
-//           <AiOutlineMenu size={50} className="opacity-70" />
-//         )}
-//       </div>
-
-//       {/* Menú */}
-//       <div
-//         className={`${
-//           nav
-//             ? "fixed top-0 left-0 w-full h-full bg-black z-40 flex items-center justify-center ease-in-out duration-500"
-//             : "fixed left-[-100%]"
-//         }`}
-//       >
-//         <ul className="uppercase p-4 text-center space-y-6">
-//           <li className="p-4 text-5xl font-sans cursor-pointer hover:text-gray-400">
-//             Inicio
-//           </li>
-//           <li className="p-4 text-5xl font-sans cursor-pointer hover:text-gray-400">
-//             Proyectos
-//           </li>
-//           <li className="p-4 text-5xl font-sans cursor-pointer hover:text-gray-400">
-//             Nosotros
-//           </li>
-//           <li className="p-4 text-5xl font-sans cursor-pointer hover:text-gray-400">
-//             Contacto
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
+export default Navbar;

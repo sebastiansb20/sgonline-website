@@ -15,15 +15,17 @@ const Grid = () => {
     "/assets/images/logos-clientes/logo-5050-armando-castaingdebat.png",
     "/assets/images/logos-clientes/logo-impacto.png",
     "/assets/images/logos-clientes/logo-kas.png",
+    "/assets/images/logos-clientes/logo-newerproducciones.png",
+    "/assets/images/logos-clientes/logo-95609.png",
   ];
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-1 p-4 max-w-screen-xl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 p-4 max-w-screen-xl justify-items-center grid-auto-flow-dense">
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="w-full h-60 flex items-center justify-center rounded-md overflow-hidden animate-fadeInColor "
+            className="w-full h-60 flex items-center justify-center rounded-md overflow-hidden  "
             style={{
               animationDelay: `${index * 0.3}s`,
             }}
@@ -31,7 +33,7 @@ const Grid = () => {
             <img
               src={logo}
               alt={`logo-${index}`}
-              className="object-contain w-[90%] h-[90%]  filter transition-transform duration-500 hover:scale-110 "
+              className="object-contain w-[80%]  filter transition-transform duration-500 hover:scale-110 "
             />
           </div>
         ))}
